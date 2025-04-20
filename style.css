@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, blue, white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav {
+    height: 70px;
+    width: 500px;
+    background: linear-gradient(to bottom, white, blue);
+    border: 5px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+nav h1 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+    user-select: none;
+}
+
+nav div {
+    height: 100%;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+
+}
+
+nav div i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+nav div p {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+/****************  container *************/
+#container {
+    height: 600px;
+    width: 400px;
+    background-color: bisque;
+    color: black;
+    border: 5px solid white;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 0px 0px 5px black;
+}
+
+#nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#nav p {
+    font-size: 23px;
+    font-weight: 700;
+    font-family: sans-serif;
+    padding: 5px 10px;
+    border-radius: 3px;
+    user-select: none;
+}
+
+#nav p:hover {
+    background-color: blue;
+    color: white;
+    box-shadow: 0px 0px 3px black;
+}
+
+/*************  show content  ************/
+#showContent {
+    height: 100px;
+    width: 100%;
+    border: 5px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10px;
+    font-size: 50px;
+    font-weight: 700;
+    user-select: none;
+}
+
+/***************  button box *******************/
+#buttons {
+    height: 350px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+/***************  rows ********************/
+.row {
+    height: 65px;
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/**************** buttons  ********************/
+.btn {
+    height: 100%;
+    width: 23%;
+    border: 3px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.btn:hover {
+    background-color: white;
+    cursor: pointer;
+    border: 3px solid bisque;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+}
+
+/****************  all clear  ************/
+#allClear {
+    height: 100%;
+    width: 23%;
+    border: 3px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+#allClear:hover {
+    background-color: white;
+    cursor: pointer;
+    border: 3px solid bisque;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+}
+
+/*****************  content clear ************/
+#contentClear {
+    height: 100%;
+    width: 23%;
+    border: 3px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+#contentClear:hover {
+    background-color: white;
+    cursor: pointer;
+    border: 3px solid bisque;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+}
+
+/**************** btn equal ********************/
+#btnEqual {
+    height: 100%;
+    width: 23%;
+    border: 3px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+#btnEqual:hover {
+    background-color: white;
+    cursor: pointer;
+    border: 3px solid bisque;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+}
+
+/************** result area ****************/
+#resultArea {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 15px;
+}
+
+#para {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+#result-box {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+/***************  classlist ***************/
+.light {
+    background-color: bisque;
+    color: black;
+}
+
+.other {
+    background-color: white;
+}
+
+
