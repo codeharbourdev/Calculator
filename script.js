@@ -1,17 +1,21 @@
-let showContent = document.getElementById("showContent");
-
+/*********************  result box  ********************/
 let resultbox = document.getElementById("result-box");
-
 
 /*************** calculator ***************/
 let btns = document.querySelectorAll(".btn");
+let showContent = document.getElementById("showContent");
 
 let expression = "";
 
 btns.forEach(btn => {
     btn.addEventListener("click", () => {
-        showContent.innerText += btn.innerText;
         expression += btn.innerText;
+        const digit = btn.innerText;
+        if (showContent.innerText.length < 16) {
+            showContent.innerText += digit;
+        } else if (navigator.vibrate) {
+            navigator.vibrate(100);    
+        }
     })
 })
 
